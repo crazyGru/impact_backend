@@ -1,0 +1,177 @@
+apscheduler.scheduler 2024-03-11 01:35:03,933 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-03-11 01:35:03,934 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-03-11 01:35:03,935 - INFO - Scheduler started
+passlib.handlers.bcrypt 2024-03-11 01:48:56,586 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+apscheduler.scheduler 2024-03-11 02:09:52,922 - INFO - Added job "do_chat" to job store "default"
+salesgpt.logger 2024-03-11 02:10:23,141 - INFO - Running from_llm: --- 0.0 seconds ---
+salesgpt.logger 2024-03-11 02:10:23,141 - INFO - Running from_llm: --- 0.0 seconds ---
+salesgpt.logger 2024-03-11 02:10:23,141 - INFO - Running from_llm: --- 0.0 seconds ---
+salesgpt.logger 2024-03-11 02:10:23,141 - INFO - Running seed_agent: --- 0.0 seconds ---
+twilio.http_client 2024-03-11 02:10:23,356 - INFO - -- BEGIN Twilio API Request --
+twilio.http_client 2024-03-11 02:10:23,357 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC6b751dd057ab8767cada0f14da57a91f/Calls.json
+twilio.http_client 2024-03-11 02:10:23,357 - INFO - Headers:
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - User-Agent : twilio-python/9.0.0 (Windows AMD64) Python/3.10.0
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - X-Twilio-Client : python-9.0.0
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - Accept-Charset : utf-8
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - Content-Type : application/x-www-form-urlencoded
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - Accept : application/json
+twilio.http_client 2024-03-11 02:10:23,358 - INFO - -- END Twilio API Request --
+twilio.http_client 2024-03-11 02:10:23,671 - INFO - Response Status Code: 201
+twilio.http_client 2024-03-11 02:10:23,671 - INFO - Response Headers: {'Date': 'Mon, 11 Mar 2024 02:10:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1873', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Twilio-Request-Id': 'RQ3d8c249659dd19e81672ccb542ebda20', 'Twilio-Request-Duration': '0.085', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+LiteLLM 2024-03-11 02:10:39,596 - INFO - [92m
+
+POST Request Sent from LiteLLM:
+curl -X POST \
+https://api.openai.com/v1/completions \
+-H 'content-type: application/json' -H 'Authorization: Bearer sk-SRx1644xmxO1pDrnEwjcT3BlbkFJ********************' \
+-d '{'model': 'gpt-3.5-turbo-instruct', 'prompt': "Never forget your name is Ted Lasso. You work as a Business Development Representative.\nYou work at company named Sleep Haven. Sleep Haven's business is the following: Sleep Haven is a premium mattress company that provides customers with the most comfortable and supportive sleeping experience possible. We offer a range of high-quality mattresses, pillows, and bedding accessories that are designed to meet the unique needs of our customers..\nCompany values are the following. Our mission at Sleep Haven is to help people achieve a better night's sleep by providing them with the best possible sleep solutions. We believe that quality sleep is essential to overall health and well-being, and we are committed to helping our customers achieve optimal sleep by offering exceptional products and customer service.\nYou are contacting a potential prospect in order to find out whether they are looking to achieve better sleep via buying a premier mattress.\nYour means of contacting the prospect is call\n\nIf you're asked about where you got the user's contact information, say that you got it from public records.\nKeep your responses in short length to retain the user's attention. Never produce lists, just answers.\nStart the conversation by just a greeting and how is the prospect doing without pitching in your first turn.\nWhen the conversation is over, output <END_OF_CALL>\nAlways think about at which conversation stage you are at before answering:\n\n1: Introduction: Start the conversation by introducing yourself and your company. Be polite and respectful while keeping the tone of the conversation professional. Your greeting should be welcoming. Always clarify in your greeting the reason why you are calling.\n2: Qualification: Qualify the prospect by confirming if they are the right person to talk to regarding your product/service. Ensure that they have the authority to make purchasing decisions.\n3: Value proposition: Briefly explain how your product/service can benefit the prospect. Focus on the unique selling points and value proposition of your product/service that sets it apart from competitors.\n4: Needs analysis: Ask open-ended questions to uncover the prospect's needs and pain points. Listen carefully to their responses and take notes.\n5: Solution presentation: Based on the prospect's needs, present your product/service as the solution that can address their pain points.\n6: Objection handling: Address any objections that the prospect may have regarding your product/service. Be prepared to provide evidence or testimonials to support your claims.\n7: Close: Ask for the sale by proposing a next step. This could be a demo, a trial or a meeting with decision-makers. Ensure to summarize what has been discussed and reiterate the benefits.\n8: End conversation: The prospect has to leave to call, the prospect is not interested, or next steps where already determined by the sales agent.\n\nExample 1:\nConversation history:\nTed Lasso: Hey, good morning! <END_OF_TURN>\nUser: Hello, who is this? <END_OF_TURN>\nTed Lasso: This is Ted Lasso calling from Sleep Haven. How are you? \nUser: I am well, why are you calling? <END_OF_TURN>\nTed Lasso: I am calling to talk about options for your home insurance. <END_OF_TURN>\nUser: I am not interested, thanks. <END_OF_TURN>\nTed Lasso: Alright, no worries, have a good day! <END_OF_TURN> <END_OF_CALL>\nEnd of example 1.\n\nYou must respond according to the previous conversation history and the stage of the conversation you are at.\nOnly generate one response at a time and act as Ted Lasso only! When you are done generating, end with '<END_OF_TURN>' to give the user a chance to respond.\n\nConversation history: \n\nTed Lasso:", 'temperature': 0.2, 'n': 1, 'stream': False, 'max_tokens': 256}'
+[0m
+
+httpx 2024-03-11 02:10:40,323 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+LiteLLM 2024-03-11 02:10:40,326 - INFO - Wrapper: Completed Call, calling success_handler
+salesgpt.logger 2024-03-11 02:10:40,332 - INFO - Running step: --- 0.8009800910949707 seconds ---
+apscheduler.executors.default 2024-03-11 02:14:52,944 - INFO - Running job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:19:52 UTC)" (scheduled at 2024-03-11 02:14:52.922524+00:00)
+apscheduler.executors.default 2024-03-11 02:14:53,069 - ERROR - Job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:19:52 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Administrator\Desktop\sales-agent-master\app\api\route.py", line 169, in do_chat
+    contact = db.query(Contact).filter(Contact.campaign_id == campaign.id, Contact.status != 'completed').one()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state.py", line 796, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\loading.py", line 1586, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Campaign at 0x18d8c799fc0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+apscheduler.executors.default 2024-03-11 02:19:52,934 - INFO - Running job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:24:52 UTC)" (scheduled at 2024-03-11 02:19:52.922524+00:00)
+apscheduler.executors.default 2024-03-11 02:19:52,934 - ERROR - Job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:24:52 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Administrator\Desktop\sales-agent-master\app\api\route.py", line 169, in do_chat
+    contact = db.query(Contact).filter(Contact.campaign_id == campaign.id, Contact.status != 'completed').one()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state.py", line 796, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\loading.py", line 1586, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Campaign at 0x18d8c799fc0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+apscheduler.executors.default 2024-03-11 02:24:52,929 - INFO - Running job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:29:52 UTC)" (scheduled at 2024-03-11 02:24:52.922524+00:00)
+apscheduler.executors.default 2024-03-11 02:24:52,945 - ERROR - Job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:29:52 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Administrator\Desktop\sales-agent-master\app\api\route.py", line 169, in do_chat
+    contact = db.query(Contact).filter(Contact.campaign_id == campaign.id, Contact.status != 'completed').one()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state.py", line 796, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\loading.py", line 1586, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Campaign at 0x18d8c799fc0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+apscheduler.executors.default 2024-03-11 02:29:52,938 - INFO - Running job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:34:52 UTC)" (scheduled at 2024-03-11 02:29:52.922524+00:00)
+apscheduler.executors.default 2024-03-11 02:29:52,948 - ERROR - Job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:34:52 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Administrator\Desktop\sales-agent-master\app\api\route.py", line 169, in do_chat
+    contact = db.query(Contact).filter(Contact.campaign_id == campaign.id, Contact.status != 'completed').one()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state.py", line 796, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\loading.py", line 1586, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Campaign at 0x18d8c799fc0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+apscheduler.executors.default 2024-03-11 02:34:52,923 - INFO - Running job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:39:52 UTC)" (scheduled at 2024-03-11 02:34:52.922524+00:00)
+apscheduler.executors.default 2024-03-11 02:34:52,923 - ERROR - Job "do_chat (trigger: interval[0:05:00], next run at: 2024-03-11 02:39:52 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Administrator\Desktop\sales-agent-master\app\api\route.py", line 169, in do_chat
+    contact = db.query(Contact).filter(Contact.campaign_id == campaign.id, Contact.status != 'completed').one()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\state.py", line 796, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\loading.py", line 1586, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Campaign at 0x18d8c799fc0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+apscheduler.scheduler 2024-03-11 04:37:24,144 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-03-11 04:37:24,144 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-03-11 04:37:24,144 - INFO - Scheduler started
+passlib.handlers.bcrypt 2024-03-11 04:38:22,522 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+apscheduler.scheduler 2024-03-11 07:07:11,823 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-03-11 07:07:11,823 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-03-11 07:07:11,823 - INFO - Scheduler started
+passlib.handlers.bcrypt 2024-03-11 12:05:44,872 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+apscheduler.scheduler 2024-03-11 12:46:21,772 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-03-11 12:46:21,772 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-03-11 12:46:21,772 - INFO - Scheduler started
+apscheduler.scheduler 2024-03-11 12:47:42,279 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-03-11 12:47:42,279 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-03-11 12:47:42,279 - INFO - Scheduler started
+asyncio 2024-03-11 12:47:48,592 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 162, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+apscheduler.scheduler 2024-09-04 18:52:14,738 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-09-04 18:52:14,739 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-09-04 18:52:14,739 - INFO - Scheduler started
+passlib.handlers.bcrypt 2024-09-04 19:03:50,715 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Crazy\AppData\Local\Programs\Python\Python312\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+apscheduler.executors.default 2024-09-05 00:00:00,006 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-06 00:00:00 CDT)" (scheduled at 2024-09-05 00:00:00-05:00)
+apscheduler.executors.default 2024-09-05 00:00:00,014 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-06 00:00:00 CDT)" executed successfully
+apscheduler.executors.default 2024-09-06 00:00:00,022 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-07 00:00:00 CDT)" (scheduled at 2024-09-06 00:00:00-05:00)
+apscheduler.executors.default 2024-09-06 00:00:00,048 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-07 00:00:00 CDT)" executed successfully
+apscheduler.executors.default 2024-09-07 00:00:00,046 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-08 00:00:00 CDT)" (scheduled at 2024-09-07 00:00:00-05:00)
+apscheduler.executors.default 2024-09-07 00:00:00,075 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-08 00:00:00 CDT)" executed successfully
+apscheduler.executors.default 2024-09-08 00:00:00,019 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-09 00:00:00 CDT)" (scheduled at 2024-09-08 00:00:00-05:00)
+apscheduler.executors.default 2024-09-08 00:00:00,025 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-09 00:00:00 CDT)" executed successfully
+apscheduler.executors.default 2024-09-09 00:00:00,017 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-10 00:00:00 CDT)" (scheduled at 2024-09-09 00:00:00-05:00)
+apscheduler.executors.default 2024-09-09 00:00:00,020 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-10 00:00:00 CDT)" executed successfully
+apscheduler.executors.default 2024-09-10 00:00:00,007 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-11 00:00:00 CDT)" (scheduled at 2024-09-10 00:00:00-05:00)
+apscheduler.executors.default 2024-09-10 00:00:00,016 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-11 00:00:00 CDT)" executed successfully
