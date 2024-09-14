@@ -175,3 +175,6 @@ apscheduler.executors.default 2024-09-09 00:00:00,017 - INFO - Running job "clea
 apscheduler.executors.default 2024-09-09 00:00:00,020 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-10 00:00:00 CDT)" executed successfully
 apscheduler.executors.default 2024-09-10 00:00:00,007 - INFO - Running job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-11 00:00:00 CDT)" (scheduled at 2024-09-10 00:00:00-05:00)
 apscheduler.executors.default 2024-09-10 00:00:00,016 - INFO - Job "clear_used (trigger: cron[hour='0', minute='0'], next run at: 2024-09-11 00:00:00 CDT)" executed successfully
+apscheduler.scheduler 2024-09-14 15:47:03,456 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+apscheduler.scheduler 2024-09-14 15:47:03,456 - INFO - Added job "clear_used" to job store "default"
+apscheduler.scheduler 2024-09-14 15:47:03,456 - INFO - Scheduler started
