@@ -352,7 +352,7 @@ async def elevenlabsvoice(voiceid:str = Query(...), text:str = Query(...)):
         "Content-Type": "application/json"
     }
 
-    response = requests.request("POST", url, json=payload, headers=headers, stream=True)
+    response = requests.request("POST", url, json=payload, headers=headers, stream=True, timeout=60)
     def stream_content():
         for chunk in response.iter_content(chunk_size=1024):
             yield chunk
